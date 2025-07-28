@@ -1,0 +1,394 @@
+{
+	"id": "591bdd1d-3488-49a7-8ff5-46e077d6be19",
+	"name": "Students",
+	"timestamp": "2024-09-29T23:34:23.355Z",
+	"collection_id": "34435446-969cb579-5e4b-4f17-919c-539f33981395",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 9,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-09-29T23:34:21.784Z",
+	"totalFail": 3,
+	"results": [
+		{
+			"id": "0de8d950-bf74-4dd3-9fce-669e312422a9",
+			"name": "GET ALL",
+			"url": "http://localhost:8080/student",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Get all test": true
+			},
+			"testPassFailCounts": {
+				"Get all test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"Get all test": true
+				}
+			]
+		},
+		{
+			"id": "a634f726-a461-4050-b992-88b42464a077",
+			"name": "INSERT",
+			"url": "http://localhost:8080/student",
+			"time": 145,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Insert test": true
+			},
+			"testPassFailCounts": {
+				"Insert test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				145
+			],
+			"allTests": [
+				{
+					"Insert test": true
+				}
+			]
+		},
+		{
+			"id": "009568aa-1951-4e91-b7c3-9a9c3f04bd0b",
+			"name": "GET BY ID 1",
+			"url": "http://localhost:8080/student/1",
+			"time": 16,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Get 1 test": true
+			},
+			"testPassFailCounts": {
+				"Get 1 test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				16
+			],
+			"allTests": [
+				{
+					"Get 1 test": true
+				}
+			]
+		},
+		{
+			"id": "d2ff0a39-a835-489f-a214-e59e6f4b1d6f",
+			"name": "UPDATE",
+			"url": "http://localhost:8080/student/1",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Update test": false
+			},
+			"testPassFailCounts": {
+				"Update test": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Update test": false
+				}
+			]
+		},
+		{
+			"id": "5d3ddde1-0ea5-47de-9812-9f2ce0b22d9f",
+			"name": "GET BY ID 2",
+			"url": "http://localhost:8080/student/1",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Get 1 test": false
+			},
+			"testPassFailCounts": {
+				"Get 1 test": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Get 1 test": false
+				}
+			]
+		},
+		{
+			"id": "be4d529b-44f3-4f8e-8281-7a4dc8e74efb",
+			"name": "DELETE",
+			"url": "http://localhost:8080/student/1",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Delete test": true
+			},
+			"testPassFailCounts": {
+				"Delete test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Delete test": true
+				}
+			]
+		},
+		{
+			"id": "12824db2-63fd-4c13-917a-a1f3dce023c5",
+			"name": "GET BY ID 3",
+			"url": "http://localhost:8080/student/1",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Get after delete test": false
+			},
+			"testPassFailCounts": {
+				"Get after delete test": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Get after delete test": false
+				}
+			]
+		},
+		{
+			"id": "618b654e-4bff-40ca-8509-ff5eec5fa6bd",
+			"name": "UPDATE NON-EXISTENT",
+			"url": "http://localhost:8080/student/1",
+			"time": 6,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Update non-existent student test": true
+			},
+			"testPassFailCounts": {
+				"Update non-existent student test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Update non-existent student test": true
+				}
+			]
+		},
+		{
+			"id": "16427fec-a27d-40e4-a3e0-9e4c4d9ac7f9",
+			"name": "DELETE NON-EXISTENT",
+			"url": "http://localhost:8080/student/1",
+			"time": 6,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Delete without id test": true
+			},
+			"testPassFailCounts": {
+				"Delete without id test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Delete without id test": true
+				}
+			]
+		},
+		{
+			"id": "9d50c85d-945d-4060-9380-33a120a3ea61",
+			"name": "INSERT 1",
+			"url": "http://localhost:8080/student",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Add test": true
+			},
+			"testPassFailCounts": {
+				"Add test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Add test": true
+				}
+			]
+		},
+		{
+			"id": "8ed2ee3d-2f59-4813-aa0e-f16db1ffb46d",
+			"name": "INSERT 2",
+			"url": "http://localhost:8080/student",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Add test": true
+			},
+			"testPassFailCounts": {
+				"Add test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Add test": true
+				}
+			]
+		},
+		{
+			"id": "d53da058-4e80-4504-9ad9-4d71e469333e",
+			"name": "GET ALL AFTER ADDED TWO",
+			"url": "http://localhost:8080/student",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Get all test": true
+			},
+			"testPassFailCounts": {
+				"Get all test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Get all test": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 247,
+	"collection": {
+		"requests": [
+			{
+				"id": "0de8d950-bf74-4dd3-9fce-669e312422a9",
+				"method": "GET"
+			},
+			{
+				"id": "a634f726-a461-4050-b992-88b42464a077",
+				"method": "POST"
+			},
+			{
+				"id": "009568aa-1951-4e91-b7c3-9a9c3f04bd0b",
+				"method": "GET"
+			},
+			{
+				"id": "d2ff0a39-a835-489f-a214-e59e6f4b1d6f",
+				"method": "PUT"
+			},
+			{
+				"id": "5d3ddde1-0ea5-47de-9812-9f2ce0b22d9f",
+				"method": "GET"
+			},
+			{
+				"id": "be4d529b-44f3-4f8e-8281-7a4dc8e74efb",
+				"method": "DELETE"
+			},
+			{
+				"id": "12824db2-63fd-4c13-917a-a1f3dce023c5",
+				"method": "GET"
+			},
+			{
+				"id": "618b654e-4bff-40ca-8509-ff5eec5fa6bd",
+				"method": "PUT"
+			},
+			{
+				"id": "16427fec-a27d-40e4-a3e0-9e4c4d9ac7f9",
+				"method": "DELETE"
+			},
+			{
+				"id": "9d50c85d-945d-4060-9380-33a120a3ea61",
+				"method": "POST"
+			},
+			{
+				"id": "8ed2ee3d-2f59-4813-aa0e-f16db1ffb46d",
+				"method": "POST"
+			},
+			{
+				"id": "d53da058-4e80-4504-9ad9-4d71e469333e",
+				"method": "GET"
+			}
+		]
+	}
+}
